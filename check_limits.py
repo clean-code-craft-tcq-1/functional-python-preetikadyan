@@ -1,6 +1,6 @@
 limit = {
      'temperature': {'min': 0, 'max': 45},
-     'state_of_change': {'min': 20, 'max': 80},
+     'state_of_charge': {'min': 20, 'max': 80},
      'charge_rate': {'min': 0,'max': 0.8}
         } 
  

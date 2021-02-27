@@ -23,4 +23,5 @@ if __name__ == '__main__':
        'charge_rate' : 0.9
           }  
   
-assert(len(report_out_of_limit_battery_parameters(Battery_Life_Parameters))==0)
+print(report_out_of_limit_battery_parameters(Battery_Life_Parameters))
+     

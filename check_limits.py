@@ -1,18 +1,26 @@
-
-def battery_is_ok(temperature, soc, charge_rate):
-  if temperature < 0 or temperature > 45:
-    print('Temperature is out of range!')
-    return False
-  elif soc < 20 or soc > 80:
-    print('State of Charge is out of range!')
-    return False
-  elif charge_rate > 0.8:
-    print('Charge rate is out of range!')
-    return False
-
-  return True
-
+limit = {
+     'temperature': {'min': 0, 'max': 45},
+     'state_of_change': {'min': 20, 'max': 80},
+     'charge_rate': {'min': 0,'max': 0.8}
+        } 
+ 
+def collect_out_of_range_battery_parameters(parameters_exceeded_limit,parameter_name,parameter_value,parameter_limit):
+     if parameter_value < parameter_limit['min'] or parameter_value > parameter_limit['max']:
+        parameters_exceeded_limit.append(parameter_name)
+         
+def report_out_of_limit_battery_parameters(Battery_Life_Parameters):
+     parameters_exceeded_limit = []
+     for battery_parameter in Battery_Life_Parameters:
+         collect_out_of_range_battery_parameters(parameters_exceeded_limit,battery_parameter,Battery_Life_Parameters[battery_parameter],limit[battery_parameter])
+     return parameters_exceeded_limit    
+     
 
 if __name__ == '__main__':
-  assert(battery_is_ok(25, 70, 0.7) is True)
-  assert(battery_is_ok(50, 85, 0) is False)
+    
+  Battery_Life_Parameters = {
+       'temperature' : 25,
+       'state_of_charge' : 70,
+       'charge_rate' : 0.9
+          }  
+  
+assert(len(report_out_of_limit_battery_parameters(Battery_Life_Parameters))==0)

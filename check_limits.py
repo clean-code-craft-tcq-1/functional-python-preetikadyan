@@ -23,5 +23,9 @@ if __name__ == '__main__':
        'charge_rate' : 0.9
           }  
   
-print(report_out_of_limit_battery_parameters(Battery_Life_Parameters))
-     
+battery_parameters_exceeded = report_out_of_limit_battery_parameters(Battery_Life_Parameters)
+
+if len(battery_parameters_exceeded) >= 2 :
+     print("High Breach")
+else:
+     print("Low Breach")

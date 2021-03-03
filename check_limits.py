@@ -11,8 +11,8 @@ def collect_out_of_range_battery_parameters(parameters_exceeded_limit,parameter_
      
 def report_out_of_limit_battery_parameters(Battery_Life_Parameters):
      parameters_exceeded_limit = []
-     for battery_paramater in Battery_Life_Parameters:
-         collect_out_of_range_battery_parameters(parameters_exceeded_limit,battery_paramater,Battery_Life_Parameters[battery_paramater],limit[battery_parameter])
+     for battery_parameter in Battery_Life_Parameters:
+         collect_out_of_range_battery_parameters(parameters_exceeded_limit,battery_parameter,Battery_Life_Parameters[battery_parameter],limit[battery_parameter])
      return parameters_exceeded_limit    
      
     

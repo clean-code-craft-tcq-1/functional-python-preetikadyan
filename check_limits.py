@@ -1,5 +1,3 @@
-from Collect_Battery_Parameters_Exceeded import *
-
 limit = {
      'temperature': {'min': 0, 'max': 45},
      'state_of_charge': {'min': 20, 'max': 80},

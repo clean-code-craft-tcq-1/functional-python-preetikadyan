@@ -21,7 +21,7 @@ Battery_Life_Parameters = {
      'temperature' : 25,
      'state_of_charge' : 70,
      'charge_rate' : 0.9
-        } 
+} 
 
 battery_parameters_exceeded = report_out_of_limit_battery_parameters(Battery_Life_Parameters)
 

@@ -19,7 +19,7 @@ def report_out_of_limit_battery_parameters(Battery_Life_Parameters):
      
 
 if __name__ == '__main__':
-  
+
 battery_parameters_exceeded = report_out_of_limit_battery_parameters(Battery_Life_Parameters)
 
 if len(battery_parameters_exceeded) >= 2 :

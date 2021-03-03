@@ -5,6 +5,12 @@ limit = {
      'state_of_charge': {'min': 20, 'max': 80},
      'charge_rate': {'min': 0,'max': 0.8}
         } 
+
+Battery_Life_Parameters = {
+       'temperature' : 25,
+       'state_of_charge' : 70,
+       'charge_rate' : 0.9
+          }  
          
 def report_out_of_limit_battery_parameters(Battery_Life_Parameters):
      parameters_exceeded_limit = []
@@ -14,12 +20,6 @@ def report_out_of_limit_battery_parameters(Battery_Life_Parameters):
      
 
 if __name__ == '__main__':
-    
-  Battery_Life_Parameters = {
-       'temperature' : 25,
-       'state_of_charge' : 70,
-       'charge_rate' : 0.9
-          }  
   
 battery_parameters_exceeded = report_out_of_limit_battery_parameters(Battery_Life_Parameters)
 

@@ -3,10 +3,6 @@ limit = {
      'state_of_charge': {'min': 20, 'max': 80},
      'charge_rate': {'min': 0,'max': 0.8}
         } 
- 
-def collect_out_of_range_battery_parameters(parameters_exceeded_limit,parameter_name,parameter_value,parameter_limit):
-     if parameter_value < parameter_limit['min'] or parameter_value > parameter_limit['max']:
-        parameters_exceeded_limit.append(parameter_name)
          
 def report_out_of_limit_battery_parameters(Battery_Life_Parameters):
      parameters_exceeded_limit = []

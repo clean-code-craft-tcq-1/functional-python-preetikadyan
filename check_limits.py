@@ -18,14 +18,14 @@ def report_out_of_limit_battery_parameters(Battery_Life_Parameters):
 if __name__ == '__main__':
      
 Battery_Life_Parameters = {
-     'temperature' : 25,
-     'state_of_charge' : 70,
-     'charge_rate' : 0.9
-} 
+       'temperature' : 25,
+       'state_of_charge' : 70,
+       'charge_rate' : 0.7
+          }  
 
 battery_parameters_exceeded = report_out_of_limit_battery_parameters(Battery_Life_Parameters)
 
 if len(battery_parameters_exceeded) >= 2 :
      print("High Breach")
-else:
+else :
      print("Low Breach")

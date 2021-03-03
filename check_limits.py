@@ -5,7 +5,6 @@ limit = {
      'state_of_charge': {'min': 20, 'max': 80},
      'charge_rate': {'min': 0,'max': 0.8}
         } 
-
 Battery_Life_Parameters = {
        'temperature' : 25,
        'state_of_charge' : 70,

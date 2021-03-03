@@ -1,7 +1,7 @@
 limit = {
      'temperature': {'min': 0, 'max': 45},
      'state_of_charge': {'min': 20, 'max': 80},
-     'charge_rate': {'min' : 0, max': 0.8}
+     'charge_rate': {'min' : 0, 'max': 0.8}
         } 
  
 def collect_out_of_range_battery_parameters(parameters_exceeded_limit,parameter_name,parameter_value,parameter_limit):

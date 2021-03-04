@@ -9,4 +9,5 @@ limit = {
 if __name__ == '__main__':
      raise_alert_battery_if_parameters_not_within_limit({'temperature' : 25, 'state_of_charge' : 70, 'charge_rate' : 0.7})
      raise_alert_battery_if_parameters_not_within_limit({'temperature' : 50, 'state_of_charge' : 85, 'charge_rate' : 0})
+     raise_alert_battery_if_parameters_not_within_limit({'temperature' : 25, 'state_of_charge' : 40, 'charge_rate' : 0.9})
 

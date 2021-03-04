@@ -1,4 +1,4 @@
-from Raise_Alert_If_Battery_Parameters_Exceeded_Limit import *
+from Raise_Alert_If_Battery_Parameters_not_within_Limit import *
 
 limit = {
      'temperature': {'min': 0, 'max': 45},
